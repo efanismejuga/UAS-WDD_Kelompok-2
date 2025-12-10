@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Strada</title>
+    <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style_Tugas2.css">
+
+    <style>
+        body {
+        font-family: Poppins, sans-serif; 
+        margin: 20px; 
+        background-color: rgb(26, 26, 26); 
+        color: #e6e6e6;
+        }
+
+        header {
+        }
+
+        nav {
+        position: fixed;
+        width: 90%;
+        margin: auto;
+        }
+
+        .nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #e6e6e6;
+        }
+
+        .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(43, 43, 43);
+        text-decoration: none;
+        margin-left: 0.9em;
+        }
+
+        .nav-menu {
+        display: flex;
+        flex-wrap: wrap; 
+        list-style: none;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 1em;
+        justify-content: flex-end;
+        }
+
+        .nav-link {
+        text-decoration: none;
+        color: #4b5563;
+        font-weight: 500;
+        transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+        color: #3b82f6;
+        }
+
+        div {
+        text-align: center; 
+        background-color: rgb(43, 43, 43);
+        border-radius: 10px;
+        margin: 20px 0;
+        }
+
+        .aboutMe {
+        padding: 3em 0 3em 0;
+        }
+
+        p {
+        margin: 20px;
+        }
+
+        ul {
+        text-align: left;
+        font-weight: bold;
+        }
+
+        button {
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 5px;
+        }
+
+        button a {
+        color: white;
+        text-decoration: none;
+        }
+
+        .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        gap: 10px;
+        }
+
+        .item {
+        height: 100%;
+        margin: 10%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        }
+
+        .item1 {
+        background-color: #3b82f6;
+        }
+
+        .item2 {
+        background-image: url('wow3.jpg');
+        background-size: cover; 
+        background-position: center;
+        }
+
+        .item3 {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        background-image: url('wow2.jpg');
+        background-size: cover;
+        background-position: center;
+        }
+
+        .item4 {
+        grid-row: 2 / span 2;
+        background-image: url('wow1.jpeg');
+        background-size: cover;
+        background-position: center;
+        }
+
+        .item5 {
+        background-color: brown;
+        }
+
+        .item6 {
+        grid-column: 2;
+        background-image: url('wow4.jpg');
+        background-size: cover;
+        background-position: center;
+        }
+
+        .item7 {
+        grid-column: 3;
+        background-color: #3b82f6;
+        }
+
+        @media screen and (min-width: 720px) {
+        body {
+            font-family: Poppins, sans-serif; 
+            margin: 20px; 
+            background-color: rgb(26, 26, 26); 
+            color: rgb(26, 26, 26);
+        }
+            
+        div {
+            background-color: #e6e6e6;
+        }
+        .nav-container {
+            background-color: rgb(43, 43, 43);
+        }  
+
+        .logo {
+            color: #e6e6e6;
+        }
+
+        }
+
+        @media print {
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: white; 
+            color: black;
+        }
+
+        img {
+            display: none;
+        }
+            
+        div {
+            background-color: white;
+            
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="logo">About Me</a>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="aboutMe">
+        <h1>About Me</h1>
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNTJm7okxHqpK2oVKEMNKNEc7rDR5pxQJzm8E6vYMhi9bpIZjC-sVdDKFucJPZ4JcFFEjYDxQHffyUJPO_6_N0fHX51szkhJlsUeDfXNGjppvgoETmx=w600-h315-p-k" alt="Profile Picture" width="90%"/>
+        <h2>Yudistira Changiago</h2>
+        <p>My name is Yudistira Changiago, I am 20 years old and currently a student at Bunda Mulia University, majoring in Interactive Design. I have a strong passion for technology and enjoy learning about new advancements in the field. In my free time, I like to listen to music, play guitar, and writing music. My goal is to become a proficient web developer and contribute to creating innovative web applications that can make a positive impact on people's lives.</p>
+        <br>
+        <button><a href="https://linktr.ee/stufnotstfu">Hit me here!</a></button>
+        <br>
+    </div>
+
+    <div>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Listen to music</li>
+            <li>Play guitar</li>
+            <li>Writing music</li>
+            <li>Watching movies</li>
+            <br>
+        </ul>
+    </div>
+    
+    <div style="height: 100%;">
+        <h2>My Favourite Things</h2>
+        <div class="gridContainer">
+            <div class="item item1"><h3>monyetDufan</h3></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"><h3>geetar</h3></div>
+            <div class="item item6"></div>
+            <div class="item item7"><h3>nasiKucing</h3></div>
+            <br>
+        </div>
+    </div>
+
+    <div>
+        <h2>Contact</h2>
+        <p>Email: <b>terserqh@gmail.com</b></p>
+    </div>
+</body>
+</html>
