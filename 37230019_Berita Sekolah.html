@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+        --biruLogo: #064ea2;
+        --fontColor: #e6e6e6;
+        --hoverColor: #3b82f6;
+        }
+
+        .nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--biruLogo);
+        margin: 0;
+        height: 5em;
+        box-shadow: 0 0.65em 4px rgb(0, 0, 0, 0.2);
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }  
+
+        .nav-menu {
+        display: flex;
+        flex-wrap: wrap; 
+        list-style: none;
+        gap: 0.8rem;
+        margin: 0;
+        padding: 1em;
+        justify-content: flex-end;
+        }
+
+        .nav-link {
+        text-decoration: none;
+        color: var(--fontColor);
+        font-weight: 500;
+        transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+        color: var(--hoverColor);
+        }
+
+        .logo {
+        margin-left: 0.9em;
+        }
+
+        body {
+        font-family: Poppins, sans-serif;
+        margin: 0;
+        text-align: center;
+        }
+
+        .Isi {
+           z-index: -1;
+           margin: 1em;
+           margin-top: 6em;
+        }
+
+
+        .berita {
+           margin: 0;
+           background-color: var(--biruLogo);
+           color: var(--fontColor);
+        }
+
+        .berita h2 {
+           padding-top: 1em;
+        }
+
+        footer {
+            background-color: var(--biruLogo);
+            color: var(--fontColor);
+            padding: 40px 60px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 20px;
+        }
+
+        .footer-left, .footer-right {
+            width: 45%;
+            min-width: 250px;
+        }
+
+        .footer-left h3, .footer-right h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .footer-left p,
+        .footer-right p {
+            line-height: 1.6;
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+        .footer-right i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .news-card {
+            display: flex;
+            width: 90%;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            gap: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            align-items: flex-start;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        .news-card img {
+            width: 32em;
+            height: 18em;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .news-content h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .news-content .date {
+            margin: 4px 0 10px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .news-content .desc {
+            margin: 0;
+            color: #555;
+            line-height: 1.5;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box-container {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="logo"><img src="Logo-Strada-small-128.png" alt="Logo" width="80em"></a>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Profil</a></li>
+                    <li><a href="#" class="nav-link">Prestasi</a></li>
+                    <li><a href="#" class="nav-link">Program Sekolah</a></li>
+                    <li><a href="#" class="nav-link">Galeri</a></li>
+                    <li><a href="#" class="nav-link">Pendaftaran</a></li>
+                    <li><a href="#" class="nav-link">Hubungi Kami</a></li>
+                    <li><a href="#" class="nav-link">Sekolah</a></li>
+                    <li><a href="#" class="nav-link">Web Sekolah</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="Isi">
+        <h1>Berita Sekolah Strada</h1>
+    </div>
+
+    <div class="news-card">
+        <div class="news-content">
+            <h2>100 TAHUN PERKUMPULAN STRADA</h2>
+            <p class="date">20 Agustus 2025</p>
+            <img src="1.jpg" alt="100th Anniversary">
+            <p class="desc">
+                Perkumpulan Strada sebagai sebuah komunitas pendidikan yang unggul, peduli, dan berjiwa melayani telah berjalan selama satu abad, menemani perjalanan bangsa ini terutama pada bidang pendidikan. Dengan 75 sekolah yang tersebar di Tangerang, Banten, Jakarta, dan Bekasi, Perkumpulan Strada turut serta mewujudkan cita-cita besar bangsa Indonesia untuk mencerdaskan kehidupan bangsa.<br>
+                Menjadi komunitas pendidikan dengan sekolah yang modern, berakar pada budaya, dan menghidupi Nilai-nilai Dasar Srada sampai akhir hayat merupakan tema besar pada perayaan seratus tahun ini. Puncak syukur perayaan seratus tahun diadakan pada Jumat (24/5) di Gereja Katedral Jakarta, Santa Maria Diangkat ke Surga, Jakarta pukul 07.30 s.d. 09.00 WIB yang dipimpin langsung oleh Bapak Kardinal Ignatius Suharyo, Pater Benedictus Hari Juliawan, SJ Kepala Provincial Serikat Jesus Provinsi Indonesia, Pater Josephus Ageng Marwata, SJ, Ketua Pengurus Perkumpulan Strada, Pater Odemus Bei Witono, SJ, Direktur Perkumpulan Strada, Romo Roy Zakaria, Pr, dan para Romo alumni Perkumpulan Strada. Perayaan syukur diikuti oleh sekitar 1.500 orang yang terdiri dari para relasi, tamu undangan, para pensiunan, dan semua guru/karyawan di Perkumpulan Strada.<br>
+                Setelah misa syukur selesai, dilanjutkan dengan acara napak tilas dengan berjalan kaki dari gereja Katedral Jakarta menuju ke Kantor Strada Pusat di Jalan Gunung Sahari 88 Jakarta Pusat. Kegiatan napak tilas ini dilakukan untuk mengingat kembali sejarah Perkumpulan Strada. Di Gereja Katedral inilah, Tiga Serangkai Pendiri Perkumpulan Strada Pastor Johannes Josephus Hubertus Maria van Ricjkevorsel, SJ; Pastor Antonius Theodorus van Hoof, SJ; dan Pastor Josephus Wilhelmus Maria Wubbe, SJ, sepakat mendirikan Strada Vereniging pada 24 Mei 1924. Seiring berjalannya waktu kantor Perkumpulan Strada kemudian pindah ke Kantor Strada Pusat saat ini di Jalan Gunung Sahari no 88.<br>Sebelum perayaan puncak syukur misa, banyak kegiatan telah dilaksanakan diantaranya adalah ziarah dan doa, temu akbar, gelar budaya, penerbitan Suplemen Jejak Perkumpulan Strada, Strada Run, donor darah, aneka lomba, seminar, talkshow, dan kegiatan peduli lingkungan. Semua kegiatan dilakukan tidak lepas dari misi Perkumpulan Strada, menyelenggarakan pendidikan yang unggul bagi kaum muda agar berkembang menjadi pribadi yang cerdas, peduli, dan berkarakter. Meningkatkan kepedulian terhadap sesama, menghargai keberagaman, dan berjuang demi terpeliharanya lingkungan hidup.<br>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Sekolah Strada</h3>
+                <p>Jl. Gunung Sahari Raya No. 88,<br>Jakarta Pusat 10610</p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Hubungi Kami</h3>
+                <p><i class="fas fa-phone-alt"></i> Tel. (021)-4204821; 4256572; 4269519</p>
+                <p><i class="fas fa-fax"></i> Fax. (021)-4258809</p>
+                <p><i class="fas fa-envelope"></i> E-mail: info@smkstrada1.sch.id</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 SMK Strada 1. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
