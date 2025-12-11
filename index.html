@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+        --biruLogo: #064ea2;
+        --fontColor: #e6e6e6;
+        --hoverColor: #3b82f6;
+        }
+
+        .nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--biruLogo);
+        margin: 0;
+        height: 5em;
+        box-shadow: 0 0.65em 4px rgb(0, 0, 0, 0.2);
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }  
+
+        .nav-menu {
+        display: flex;
+        flex-wrap: wrap; 
+        list-style: none;
+        gap: 0.8rem;
+        margin: 0;
+        padding: 1em;
+        justify-content: flex-end;
+        }
+
+        .nav-link {
+        text-decoration: none;
+        color: var(--fontColor);
+        font-weight: 500;
+        transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+        color: var(--hoverColor);
+        }
+
+        .logo {
+        margin-left: 0.9em;
+        }
+
+        body {
+        font-family: Poppins, sans-serif;
+        margin: 0;
+        text-align: center;
+        }
+
+        .Isi {
+           z-index: -1;
+           margin: 1em;
+           margin-top: 6em;
+        }
+
+
+        .berita {
+           margin: 0;
+           background-color: var(--biruLogo);
+           color: var(--fontColor);
+        }
+
+        .berita h2 {
+           padding-top: 1em;
+        }
+
+        footer {
+            background-color: var(--biruLogo);
+            color: var(--fontColor);
+            padding: 40px 60px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 20px;
+        }
+
+        .footer-left, .footer-right {
+            width: 45%;
+            min-width: 250px;
+        }
+
+        .footer-left h3, .footer-right h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .footer-left p,
+        .footer-right p {
+            line-height: 1.6;
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+        .footer-right i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .news-card {
+            display: flex;
+            width: 90%;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            gap: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            align-items: flex-start;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        .news-card img {
+            width: 32em;
+            height: 18em;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .news-content h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .news-content .date {
+            margin: 4px 0 10px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .news-content .desc {
+            margin: 0;
+            color: #555;
+            line-height: 1.5;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box-container {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="logo"><img src="Logo-Strada-small-128.png" alt="Logo" width="80em"></a>
+                <ul class="nav-menu">
+                    <li><a href="37230019_Homepage.html" class="nav-link">Home</a></li>
+                    <li><a href="profil.html" class="nav-link">Profil</a></li>
+                    <li><a href="sejarah.html" class="nav-link">Sejarah</a></li>
+                    <li><a href="Gallery.html" class="nav-link">Galeri</a></li>
+                    <li><a href="struktur_organisasi.html" class="nav-link">Struktur Organisasi</a></li>
+                    <li><a href="Pendaftaran.html" class="nav-link">Pendaftaran</a></li>
+                    <li><a href="Contact us.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="37230019_Sekolah.html" class="nav-link">Sekolah</a></li>
+                    <li><a href="37230019_Berita Sekolah.html" class="nav-link">Berita Sekolah</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
